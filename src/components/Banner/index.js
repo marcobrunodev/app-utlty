@@ -9,7 +9,7 @@ const Banner = styled.img`
   filter: drop-shadow(4px 4px 4px #000000);
 
   @media(min-width: 760px) {
-    height: 30rem;
+    height: 45rem;
     object-fit: cover;
   }
 `
