@@ -1,10 +1,9 @@
 import Web3 from 'web3'
 import abi from '../abi/UTLTY.json'
 
-const { VITE_RPC, VITE_CONTRACT, VITE_NORMAL_MINT_PRICE } = import.meta.env
+const { VITE_CONTRACT, VITE_NORMAL_MINT_PRICE } = import.meta.env
 
 const useEthereum = () => {
-  console.log('VITE_RPC', VITE_RPC)
   const web3 = new Web3(Web3.givenProvider)
   const contract = new web3.eth.Contract(abi, VITE_CONTRACT)
 
