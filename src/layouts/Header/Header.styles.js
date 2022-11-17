@@ -13,6 +13,7 @@ const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--color-first-black);
 
   & > ${Logo} {
     height: 100%;
@@ -20,16 +21,6 @@ const Header = styled.header`
 
   & > ${IconMenu} {
     margin-right: 0.5rem;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    height: 0.1rem;
-    width: calc(100% - 2rem);
-    min-width: 30rem;
-    background-color: var(--color-first-white);
   }
 `
 

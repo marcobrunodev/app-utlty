@@ -25,6 +25,7 @@ const Form = styled.form`
   & ${Line} {
     margin-top: 2rem;
     margin-bottom: 1rem;
+    max-width: 600px;
   }
   
   ${hasColumn};

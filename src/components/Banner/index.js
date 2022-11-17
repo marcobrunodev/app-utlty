@@ -7,6 +7,8 @@ const Banner = styled.img`
   border-top: var(--border);
   border-bottom: var(--border);
   filter: drop-shadow(4px 4px 4px #000000);
+  position: relative;
+  z-index: -1;
 
   @media(min-width: 960px) {
     height: 45rem;

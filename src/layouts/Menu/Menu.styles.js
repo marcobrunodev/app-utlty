@@ -33,7 +33,7 @@ const Menu = styled.menu`
   width: 100vw;
   height: 100vh;
   background-color: var(--color-first-black);
-  z-index: 10;
+  z-index: 100;
   padding-top: 4rem;
   display: flex;
   flex-direction: column;
@@ -41,6 +41,7 @@ const Menu = styled.menu`
   border-left: 0.1rem solid var(--color-first);
   transition: transform 200ms ease-in-out;
   transform: translateX(100%);
+  
   
   ${hasActive};
 `
