@@ -5,7 +5,7 @@ import Twitter from '../../components/Twitter'
 import ConnectWalletEth from '../../components/ConnectWalletEth'
 import S from './Menu.styles'
 
-const Menu = ({ items, toggle, active, connectWallet }) => (
+const Menu = ({ items, toggle, active }) => (
   <S.WrapperMenu>
     <IconMenu onClick={toggle} />
 
@@ -30,7 +30,6 @@ Menu.propTypes = {
     label: string.isRequired,
     to: string.isRequired
   })),
-  connectWallet: func.isRequired,
   toggle: func.isRequired
 }
 
