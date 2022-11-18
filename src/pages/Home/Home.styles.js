@@ -23,13 +23,7 @@ const Data = styled.section`
 
 const Home = styled.main`
   & > ${Banner} {
-    height: 15rem;
-    object-fit: cover;
     margin-bottom: 2rem;
-  }
-
-  & > ${Description} {
-    padding:  0 1rem;
   }
 `
 
