@@ -43,8 +43,8 @@ const Home = () => (
 
       <S.TeamMembers>
         <TeamMember src={founder} name="@nftPAPI_G" description="Founder" />
-        <TeamMember src={adivisor1} name="@sn00zeCat" description="Adivisor" />
-        <TeamMember src={adivisor2} name="@ZygfridS" description="Adivisor" />
+        <TeamMember src={adivisor1} name="@sn00zeCat" description="Advisor" />
+        <TeamMember src={adivisor2} name="@ZygfridS" description="Advisor" />
       </S.TeamMembers>
     </S.Team>
 
