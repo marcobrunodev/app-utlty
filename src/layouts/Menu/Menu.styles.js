@@ -2,6 +2,13 @@ import { Link } from 'react-router-dom'
 import styled, { css } from 'styled-components'
 import close from '../../assets/images/icon-close.svg'
 
+const Social = styled.div`
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+`
+
 const Item = styled(Link)`
   color: var(--color-first-white);
   text-decoration: none;
@@ -46,4 +53,4 @@ const Menu = styled.menu`
   ${hasActive};
 `
 
-export default { Menu, Item, Close }
+export default { Menu, Item, Close, Social }

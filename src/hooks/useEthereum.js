@@ -12,8 +12,6 @@ const useEthereum = () => {
   const getPrice = async () => {
     const price = await contract.methods.normalMintPrice().call()
 
-    console.log('price', Web3.utils.fromWei(price, 'ether'))
-
     return price
   }
 
@@ -31,22 +29,9 @@ const useEthereum = () => {
         console.log(e)
       })
 
-    console.log('gas', gas)
-
     options = { ...options, gas: parseInt(1.2 * gas) }
 
-    console.log('options', options)
-
-    action.send(options).on('transactionHash', hash => {
-      console.log('hash', hash)
-    }).on('confirmation', (confirmationNumber, receipt) => {
-      console.log('confirmationNumber', confirmationNumber)
-      console.log('receipt', receipt)
-    }).on('receipt', receipt => {
-      console.log('receipt', receipt)
-    }).on('error', error => {
-      console.log('error here', error)
-    })
+    return action.send(options)
   }
 
   const mint = (quantity, adress) => {

@@ -9,7 +9,7 @@ const hasFixed = ({ fixed }) => fixed && css`
   height: var(--size-button-fixed);
 `
 
-const hasSecondary = ({ secondary }) => secondary && css`
+const hasSecond = ({ second }) => second && css`
   background-color: var(--color-first-black);
   color: var(--color-first);
   border: 0.2rem solid var(--color-first);
@@ -32,6 +32,7 @@ const Button = styled.button`
   cursor: var(--cursor-pointer);
   transition: transform 0.2s ease-in-out;
   max-width: 30rem;
+  text-decoration: none;
 
   & > img {
     height: 1em;
@@ -41,7 +42,7 @@ const Button = styled.button`
     transform: scale(1.1);
   }
 
-  ${hasSecondary};
+  ${hasSecond};
   ${hasFixed};
   ${hasActive};
 `

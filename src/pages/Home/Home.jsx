@@ -1,11 +1,18 @@
 import banner from '../../assets/images/home-banner.png'
+import founder from '../../assets/images/nftPAPI_G.png'
+import adivisor1 from '../../assets/images/sn00zeCat.png'
+import adivisor2 from '../../assets/images/ZygfridS.png'
 import Banner from '../../components/Banner'
 import Description from '../../components/Description'
 import Line from '../../components/Line'
-import Header from '../../layouts/Header'
-import MintInfos from '../../layouts/MintInfos'
 import mintBanner from '../../assets/images/mint-banner.png'
 import working from '../../assets/images/working.png'
+import MintCountdown from '../../components/MintCountdown'
+import Title from '../../components/Title'
+import MintInfos from '../../layouts/MintInfos'
+import Header from '../../layouts/Header'
+import TeamMember from '../../layouts/TeamMember'
+import Footer from '../../layouts/Footer'
 import S from './Home.styles'
 
 const Home = () => (
@@ -26,6 +33,20 @@ const Home = () => (
 
       <MintInfos banner={working} mint="2.5 SOL" supply="4444" />
     </S.Data>
+
+    <MintCountdown />
+
+    <S.Team>
+      <Title center>Team</Title>
+
+      <TeamMember src={founder} name="@nftPAPI_G" description="Founder" />
+      <TeamMember src={adivisor1} name="@sn00zeCat" description="Adivisor" />
+      <TeamMember src={adivisor2} name="@ZygfridS" description="Adivisor" />
+    </S.Team>
+
+    <Line second center />
+
+    <Footer />
   </S.Home>
 )
 

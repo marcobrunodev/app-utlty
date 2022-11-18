@@ -1,5 +1,7 @@
 import { arrayOf, shape, string, func, bool } from 'prop-types'
+import Discord from '../../components/Discord'
 import IconMenu from '../../components/IconMenu'
+import Twitter from '../../components/Twitter'
 import S from './Menu.styles'
 
 const Menu = ({ items, toggle, active }) => (
@@ -10,6 +12,11 @@ const Menu = ({ items, toggle, active }) => (
       <S.Close onClick={toggle} />
 
       {items.map(({ label, to }) => (<S.Item key={label} to={to}>{label}</S.Item>))}
+
+      <S.Social>
+        <Twitter />
+        <Discord />
+      </S.Social>
     </S.Menu>
   </>
 )
