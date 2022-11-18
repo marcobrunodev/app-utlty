@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import Banner from '../../components/Banner'
-import Card from '../../components/Card'
-import Description from '../../components/Description'
+import { Infos, MintInfos } from '../../layouts/MintInfos/MintInfos.styles'
 
 const Team = styled.section`
   display: flex;
@@ -16,8 +15,21 @@ const Data = styled.section`
   align-items: center;
   padding: 2rem 0;
 
-  & ${Card} {
-    margin-bottom: 1rem;
+  @media (min-width: 640px) {
+    flex-direction: row-reverse;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    & ${MintInfos}:first-child {
+      flex-direction: column-reverse;
+
+      & ${Infos} {
+        margin-bottom: 1rem;
+      }
+    }
   }
 `
 

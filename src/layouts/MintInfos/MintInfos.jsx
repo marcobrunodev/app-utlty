@@ -3,10 +3,10 @@ import Card from '../../components/Card'
 import S from './MintInfos.styles'
 
 const MintInfos = ({ banner, supply, mint }) => (
-  <>
+  <S.MintInfos>
     <Card center src={banner} />
 
-    <S.MintInfos>
+    <S.Infos>
       <S.Info>
         <S.Label>Supply</S.Label>
         <S.Value>{supply}</S.Value>
@@ -16,8 +16,8 @@ const MintInfos = ({ banner, supply, mint }) => (
         <S.Label>Mint</S.Label>
         <S.Value>{mint}</S.Value>
       </S.Info>
-    </S.MintInfos>
-  </>
+    </S.Infos>
+  </S.MintInfos>
 )
 
 MintInfos.propTypes = {
