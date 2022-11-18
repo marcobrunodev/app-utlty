@@ -16,8 +16,6 @@ const useConnectWalletEth = () => {
   }
 
   useEffect(() => {
-    console.log('address', address)
-
     if (isConnected) {
       setLabel(shortAddress())
     } else {
