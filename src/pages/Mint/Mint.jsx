@@ -22,7 +22,7 @@ const Mint = ({ networks, activeMint, changeNetwork, network, connectWallet, lab
 
       <Select onChange={changeNetwork} value={network} name="networks" items={networks} />
 
-      <ConnectWalletEth />
+      <ConnectWalletEth active={network === 'ethereum'} />
 
       <Button active={network === 'solana'} second onClick={connectWallet}>
         {labelConnectWallet}
