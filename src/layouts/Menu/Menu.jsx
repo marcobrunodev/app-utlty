@@ -2,10 +2,11 @@ import { arrayOf, shape, string, func, bool } from 'prop-types'
 import Discord from '../../components/Discord'
 import IconMenu from '../../components/IconMenu'
 import Twitter from '../../components/Twitter'
+import ConnectWalletEth from '../../components/ConnectWalletEth'
 import S from './Menu.styles'
 
-const Menu = ({ items, toggle, active }) => (
-  <>
+const Menu = ({ items, toggle, active, connectWallet }) => (
+  <S.WrapperMenu>
     <IconMenu onClick={toggle} />
 
     <S.Menu active={active}>
@@ -13,12 +14,14 @@ const Menu = ({ items, toggle, active }) => (
 
       {items.map(({ label, to }) => (<S.Item key={label} to={to}>{label}</S.Item>))}
 
+      <ConnectWalletEth />
+
       <S.Social>
         <Twitter />
         <Discord />
       </S.Social>
     </S.Menu>
-  </>
+  </S.WrapperMenu>
 )
 
 Menu.propTypes = {
@@ -27,6 +30,7 @@ Menu.propTypes = {
     label: string.isRequired,
     to: string.isRequired
   })),
+  connectWallet: func.isRequired,
   toggle: func.isRequired
 }
 

@@ -1,12 +1,17 @@
 import { Link } from 'react-router-dom'
 import styled, { css } from 'styled-components'
 import close from '../../assets/images/icon-close.svg'
+import IconMenu from '../../components/IconMenu'
 
 const Social = styled.div`
   display: flex;
   gap: 2rem;
   justify-content: center;
   margin-top: 2rem;
+
+  @media (min-width: 640px) {
+    display: none;
+  }
 `
 
 const Item = styled(Link)`
@@ -25,6 +30,10 @@ const Close = styled.img.attrs({ src: close })`
 
   &:hover {
     transform: scale(1.1);
+  }
+
+  @media (min-width: 640px) {
+    display: none;
   }
 `
 
@@ -48,9 +57,30 @@ const Menu = styled.menu`
   border-left: 0.1rem solid var(--color-first);
   transition: transform 200ms ease-in-out;
   transform: translateX(100%);
-  
+  gap: 2rem;
+
+  @media (min-width: 640px) {
+    position: static;
+    transform: translate(0);
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    border: none;
+    flex-direction: row;
+    padding: 0;
+  }
   
   ${hasActive};
 `
 
-export default { Menu, Item, Close, Social }
+const WrapperMenu = styled.div`
+  display: flex;
+
+  @media (min-width: 640px) {
+    & ${IconMenu} {
+      display: none;
+    } 
+  }
+`
+
+export default { WrapperMenu, Menu, Item, Close, Social }

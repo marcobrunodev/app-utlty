@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { ConnectWalletEth } from '../../components/ConnectWalletEth/ConnectWalletEth.styles'
 import IconMenu from '../../components/IconMenu'
 import Logo from '../../components/Logo'
 
@@ -21,6 +22,22 @@ const Header = styled.header`
 
   & > ${IconMenu} {
     margin-right: 0.5rem;
+  }
+
+  & ${ConnectWalletEth} {
+    box-sizing: border-box;
+    font-size: 2rem;
+    padding: 0.8rem;
+
+    & > img {
+      height: 0.7em;
+    }
+  }
+
+  @media (min-width: 960px) {
+    & ${ConnectWalletEth} {
+      font-size: 3rem;
+    }
   }
 `
 

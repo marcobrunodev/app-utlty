@@ -9,7 +9,7 @@ import Radio from '../../components/Radio'
 import Select from '../../components/Select'
 import MintHeader from '../../layouts/MintHeader'
 import S from './Mint.styles'
-import IconConnectWallet from '../../components/IconConnectWallet'
+import ConnectWalletEth from '../../components/ConnectWalletEth'
 
 const Mint = ({ networks, activeMint, changeNetwork, network, connectWallet, labelConnectWallet, price, quantity, changeQuantity, makeMint }) => (
   <S.Mint>
@@ -22,10 +22,7 @@ const Mint = ({ networks, activeMint, changeNetwork, network, connectWallet, lab
 
       <Select onChange={changeNetwork} value={network} name="networks" items={networks} />
 
-      <Button active={network === 'ethereum'} second onClick={connectWallet}>
-        <IconConnectWallet />
-        {labelConnectWallet}
-      </Button>
+      <ConnectWalletEth />
 
       <Button active={network === 'solana'} second onClick={connectWallet}>
         {labelConnectWallet}
