@@ -20,6 +20,7 @@ const TeamMember = styled.article`
   flex-direction: column;
   align-items: center;
   width: calc(100% - 2rem);
+  max-width: 30rem;
   gap: 0.5rem;
   margin-left: auto;
   margin-right: auto;

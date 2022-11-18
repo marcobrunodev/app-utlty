@@ -6,7 +6,7 @@ const Description = styled.p`
   padding:  0 1rem;
 
   @media (min-width: 960px) {
-    font-size: 3rem;
+    font-size: 2.4rem;
     padding: 0 2rem;
   }
 `

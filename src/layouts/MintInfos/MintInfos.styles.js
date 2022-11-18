@@ -1,13 +1,21 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 const Value = styled.p`
   color: var(--color-first-white);
   font-size: 2.8rem;
+
+  @media (min-width: 640px) {
+    font-size: 3.2rem;  
+  }
 `
 
 const Label = styled.h2`
   color: var(--color-first);
   font-size: 3rem;
+
+  @media (min-width: 640px) {
+    font-size: 3.5rem;
+  }
 `
 
 const Info = styled.div`

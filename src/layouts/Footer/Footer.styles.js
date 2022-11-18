@@ -6,6 +6,10 @@ const Footer = styled.footer`
   align-items: center;
   padding: 1rem;
   gap: 2rem;
+
+  @media (min-width: 640px) {
+    padding: 2rem 0 4rem;
+  }
 `
 
 export default {
