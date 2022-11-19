@@ -6,12 +6,11 @@ import Form from '../../components/Form'
 import Label from '../../components/Label'
 import Line from '../../components/Line'
 import Radio from '../../components/Radio'
-import Select from '../../components/Select'
 import MintHeader from '../../layouts/MintHeader'
 import S from './Mint.styles'
 import ConnectWalletEth from '../../components/ConnectWalletEth'
 
-const Mint = ({ networks, activeMint, changeNetwork, network, connectWallet, labelConnectWallet, price, quantity, changeQuantity, makeMint }) => (
+const Mint = ({ networks, activeMint, network, connectWallet, labelConnectWallet, price, quantity, changeQuantity, makeMint }) => (
   <S.Mint>
     <MintHeader />
 
@@ -51,7 +50,6 @@ Mint.propTypes = {
     value: string.isRequired
   })).isRequired,
   activeMint: bool.isRequired,
-  changeNetwork: func.isRequired,
   network: string.isRequired,
   connectWallet: func.isRequired,
   labelConnectWallet: string.isRequired,
