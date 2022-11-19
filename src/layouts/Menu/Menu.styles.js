@@ -19,10 +19,9 @@ const hasSol = ({ sol }) => sol && css`
   `
 
 const Item = styled(Link)`
-  color: var(--color-first-white);
   text-decoration: none;
   font-size: 3rem;
-  color: var(--color-ether);
+  color: var(--color-first);
   transition: color 200ms ease-in-out;
 
   &:hover {

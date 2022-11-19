@@ -29,9 +29,15 @@ const MintCountdown = ({ days, hours, minutes, seconds }) => (
       </S.Slot>
     </S.Clock>
 
-    <Button as={Link} to="/mint" second>
-      Go mint
-    </Button>
+    <S.Buttons>
+      <Button as='a' href="https://solmint.utlty.us" second>
+        Mint SOL
+      </Button>
+
+      <Button as={Link} to="/mint" second>
+        Mint ETH
+      </Button>
+    </S.Buttons>
   </S.MintCountdown>
 )
 

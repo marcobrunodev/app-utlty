@@ -1,6 +1,12 @@
 import styled from 'styled-components'
 import Subtitle from '../Subtitle'
 
+const Buttons = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+`
+
 const Caption = styled.span`
   font-size: 1.2rem;
   font-weight: bold;
@@ -55,4 +61,4 @@ const MintCountdown = styled.section`
   }
 `
 
-export default { MintCountdown, Clock, Slot, Time, Caption }
+export default { MintCountdown, Clock, Slot, Time, Caption, Buttons }
