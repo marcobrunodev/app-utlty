@@ -14,7 +14,7 @@ const useWallet = () => {
   const chains = [chain.goerli]
 
   const { provider } = configureChains(chains, [
-    walletConnectProvider({ projectId: VITE_WALLETCONNECT_PROJECT_ID })
+    walletConnectProvider({ projectId: '3673966425918615498b49e794b6aea4' })
   ])
   const wagmiClient = createClient({
     autoConnect: true,
