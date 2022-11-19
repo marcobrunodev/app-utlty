@@ -15,7 +15,7 @@ const useWallet = () => {
   ])
   const wagmiClient = createClient({
     autoConnect: true,
-    connectors: modalConnectors({ appName: 'web3Modal', chains }),
+    connectors: modalConnectors({ appName: 'UTLTY', chains }),
     provider
   })
 
