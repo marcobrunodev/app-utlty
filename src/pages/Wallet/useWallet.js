@@ -6,15 +6,14 @@ import {
 
 import { chain, configureChains, createClient } from 'wagmi'
 
-const { VITE_WALLETCONNECT_PROJECT_ID } = import.meta.env
-
-console.log('VITE_WALLETCONNECT_PROJECT_ID', VITE_WALLETCONNECT_PROJECT_ID)
-
 const useWallet = () => {
+  const projectId = '3673966425918615498b49e794b6aea4'
   const chains = [chain.goerli]
 
+  console.log('projectId', projectId)
+
   const { provider } = configureChains(chains, [
-    walletConnectProvider({ projectId: '3673966425918615498b49e794b6aea4' })
+    walletConnectProvider({ projectId })
   ])
   const wagmiClient = createClient({
     autoConnect: true,
