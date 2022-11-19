@@ -10,6 +10,9 @@ const Colors = createGlobalStyle`
 
     --color-first-white: #FFFFFF;
     --color-second-white: #C7C9C9;
+
+    --color-sol: #9763e2;
+    --color-ether: #a4fcf5;
   }
 `
 

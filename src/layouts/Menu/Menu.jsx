@@ -12,9 +12,7 @@ const Menu = ({ items, toggle, active }) => (
     <S.Menu active={active}>
       <S.Close onClick={toggle} />
 
-      {items.map(({ label, to }) => (<S.Item key={label} to={to}>{label}</S.Item>))}
-
-      <ConnectWalletEth />
+      {items.map((props) => (<S.Item {...props} key={props.label} >{props.label}</S.Item>))}
 
       <S.Social>
         <Twitter />

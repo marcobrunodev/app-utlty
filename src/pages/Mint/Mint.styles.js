@@ -26,7 +26,7 @@ const Mint = styled.main`
   padding-bottom: 2rem;
 
   & > ${Banner} {
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
   }
 `
 

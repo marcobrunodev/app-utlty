@@ -14,10 +14,22 @@ const Social = styled.div`
   }
 `
 
+const hasSol = ({ sol }) => sol && css`
+  color: var(--color-sol)
+  `
+
 const Item = styled(Link)`
   color: var(--color-first-white);
   text-decoration: none;
   font-size: 3rem;
+  color: var(--color-ether);
+  transition: color 200ms ease-in-out;
+
+  &:hover {
+    color: var(--color-first-white);
+  }
+
+  ${hasSol};
 `
 
 const Close = styled.img.attrs({ src: close })`

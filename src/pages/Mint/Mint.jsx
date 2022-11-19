@@ -18,10 +18,6 @@ const Mint = ({ networks, activeMint, changeNetwork, network, connectWallet, lab
     <Banner src={banner} />
 
     <Form column center>
-      <Label>Network</Label>
-
-      <Select onChange={changeNetwork} value={network} name="networks" items={networks} />
-
       <ConnectWalletEth active={network === 'ethereum'} />
 
       <Button active={network === 'solana'} second onClick={connectWallet}>

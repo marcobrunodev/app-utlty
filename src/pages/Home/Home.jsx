@@ -18,6 +18,7 @@ import S from './Home.styles'
 const Home = () => (
   <S.Home>
     <Header />
+
     <S.BannerSection>
       <Banner src={city} />
       <Description>

@@ -6,7 +6,7 @@ const Header = () => (
   <S.Header>
     <Logo />
 
-    <Menu items={[{ label: 'Mint', to: '/mint' }]} />
+    <Menu />
   </S.Header>
 )
 
