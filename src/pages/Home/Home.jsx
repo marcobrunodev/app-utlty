@@ -1,4 +1,5 @@
-import banner from '../../assets/images/home-banner.png'
+import city from '../../assets/images/city.png'
+import working from '../../assets/images/working.png'
 import founder from '../../assets/images/nftPAPI_G.png'
 import adivisor1 from '../../assets/images/sn00zeCat.png'
 import adivisor2 from '../../assets/images/ZygfridS.png'
@@ -6,7 +7,6 @@ import Banner from '../../components/Banner'
 import Description from '../../components/Description'
 import Line from '../../components/Line'
 import mintBanner from '../../assets/images/mint-banner.png'
-import working from '../../assets/images/working.png'
 import MintCountdown from '../../components/MintCountdown'
 import Title from '../../components/Title'
 import MintInfos from '../../layouts/MintInfos'
@@ -19,7 +19,7 @@ const Home = () => (
   <S.Home>
     <Header />
     <S.BannerSection>
-      <Banner src={banner} />
+      <Banner src={city} />
       <Description>
         It’s been more than a decade, but I remember it just like it was yesterday – we were just little kids shooting hoops on the street, all fighting for free ice cream given to the highest scorer. It was fun, we were just dumb kids enjoying life, not worrying about a damn thing.
       </Description>
