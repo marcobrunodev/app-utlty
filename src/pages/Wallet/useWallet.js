@@ -7,10 +7,8 @@ import {
 import { chain, configureChains, createClient } from 'wagmi'
 
 const useWallet = () => {
-  const projectId = '3673966425918615498b49e794b6aea4'
+  const projectId = '1dcdc2bf0fd009aa7bde41002ef945bf'
   const chains = [chain.goerli]
-
-  console.log('projectId', projectId)
 
   const { provider } = configureChains(chains, [
     walletConnectProvider({ projectId })
