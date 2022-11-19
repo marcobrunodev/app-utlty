@@ -3,8 +3,6 @@ import { Web3Modal } from '@web3modal/react'
 import useWallet from './useWallet'
 import { WagmiConfig } from 'wagmi'
 
-const { VITE_WALLETCONNECT_PROJECT_ID } = import.meta.env
-
 const Wallet = () => {
   const { wagmiClient, ethereumClient } = useWallet()
 
@@ -15,7 +13,7 @@ const Wallet = () => {
       </WagmiConfig>
 
       <Web3Modal
-          projectId={VITE_WALLETCONNECT_PROJECT_ID}
+          projectId="1dcdc2bf0fd009aa7bde41002ef945bf"
           theme="dark"
           accentColor="default"
           ethereumClient={ethereumClient}
