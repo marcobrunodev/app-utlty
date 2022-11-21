@@ -6,7 +6,7 @@ const useMintEthereum = ({ setPrice, setQuantity, quantity, network }) => {
   const [activeMint, setActiveMint] = useState(false)
   const labelConnectWallet = useState('Connect Wallet')
   const { address, isConnected } = useAccount()
-  const [defaultPrice, setDefaultPrice] = useState(0.035)
+  const [defaultPrice, setDefaultPrice] = useState(0.016)
   const { getPriceEther, mint } = useEthereum()
   const [currentQuantity, setCurrentQuantity] = useState(1)
 
