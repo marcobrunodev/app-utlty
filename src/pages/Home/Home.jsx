@@ -32,7 +32,7 @@ const Home = () => (
     <Line second center />
 
     <S.Data>
-      <MintInfos banner={mintBanner} mint="0.16 ETH" supply="2500" />
+      <MintInfos banner={mintBanner} mint="0.16 ETH" supply="500" />
 
       <MintInfos banner={working} mint="2.5 SOL" supply="6777" />
     </S.Data>
