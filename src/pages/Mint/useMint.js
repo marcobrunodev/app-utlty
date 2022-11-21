@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 const useMint = () => {
   const [network, setNetwork] = useState('ethereum')
-  const [price, setPrice] = useState('0.016 eth')
+  const [price, setPrice] = useState('0.16 eth')
   const [quantity, setQuantity] = useState(2)
   const networks = [{ label: 'Ethereum', value: 'ethereum' }, { label: 'Solana', value: 'solana' }]
 
